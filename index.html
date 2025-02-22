@@ -5,35 +5,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvic A. Soliman - Home</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f4f8;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #4a90e2, #6a6efc);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        nav {
+            background-color: #333;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1rem;
+            transition: background 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #4a90e2;
+            border-radius: 5px;
+        }
+        section {
+            padding: 4rem 2rem;
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            margin-bottom: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease;
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #4a90e2;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease, transform 0.2s ease;
+            margin-top: 1rem;
+        }
+        .btn:hover {
+            background-color: #357ab8;
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #333;
+            color: white;
+        }
+        section#home {
+            background: linear-gradient(135deg, #fefefe, #e8f0ff);
+            text-align: center;
+        }
+        section#about, section#contact {
+            background-color: #fff;
+        }
+        ul.contact-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul.contact-list li {
+            margin-bottom: 0.5rem;
+        }
+        ul.contact-list a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+        ul.contact-list a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 
     <header>
         <h1>Welcome to Marvic A. Soliman's Website</h1>
         <p>Your go-to place for all things about Marvic!</p>
+        <a href="#contact" class="btn">Connect with Me</a>
     </header>
 
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact Me</a></li>
         </ul>
     </nav>
 
     <section id="home">
-        <h2>Home Section</h2>
-        <p>This is the home section where you can introduce yourself and your website.</p>
+        <h2>Home</h2>
+        <p>Hello! I'm <strong>Marvic A. Soliman</strong>, passionate about technology, web development, and innovation. Explore my website to learn more about me and how we can collaborate.</p>
+        <a href="#about" class="btn">Learn More</a>
     </section>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Here you can write a little about yourself, your background, interests, or what your website is all about.</p>
+        <p>I am a web developer dedicated to creating intuitive, responsive, and visually stunning websites. With a background in technology and design, I focus on delivering user-friendly solutions that meet client needs. Beyond coding, I enjoy photography, hiking, and exploring new tech trends.</p>
     </section>
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>You can add your contact information here or provide a contact form.</p>
+        <p>I'm always open to new opportunities and collaborations. Reach out through any of the following platforms:</p>
+        <ul class="contact-list">
+            <li>Email: <a href="mailto:marvic.soliman@example.com">marvic.soliman@example.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/marvic-soliman" target="_blank">marvic-soliman</a></li>
+            <li>GitHub: <a href="https://github.com/marvicas" target="_blank">marvicas</a></li>
+        </ul>
     </section>
 
     <footer>
